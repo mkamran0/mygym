@@ -1,0 +1,27 @@
+{% extends 'layout/base.html' %}
+
+{% block body %}
+<div class="card text-white bg-dark mb-3 my-4" style="max-width: 50rem;">
+    <div class="card-header">Yoga Trainers Details</div>
+    <div class="card-body">
+      <h5 class="card-title">Yoga Trainers</h5>
+      <p class="card-text"><p>Shakti kumar from Banaras</p><p>Adi sharma from Lucknow</p></p>
+    </div>
+  </div>
+  {% include 'layout/footer.html' %}
+  {% endblock body %}
+  
+  {% block css %}
+      <style>
+          footer{
+              margin-top: 525px;
+          }
+      </style>
+  {% endblock css %}
+
+  {% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+    

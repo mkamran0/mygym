@@ -1,0 +1,35 @@
+{% extends 'layout/base.html' %}
+
+
+{% block body %}
+
+<h1>Yoga</h1>
+
+<p>It’s time to roll out your yoga mat and discover the combination of physical and mental exercises that for thousands
+     of years have hooked yoga practitioners around the globe. The beauty of yoga is that you don’t have to be a yogi or
+      yogini to reap the benefits. Whether you are young or old, overweight or fit, yoga has the power to calm the mind 
+      and strengthen the body. Don’t be intimidated by yoga terminology, fancy yoga studios and complicated poses. Yoga 
+      is for everyone.</p>
+
+{% include 'layout/footer.html' %}
+{% endblock body %}
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+
+
+{% block css %}
+    <style>
+        footer{
+            margin-top: 608px;
+        }
+        h1{
+            margin-top: 30px;
+        }
+    </style>
+{% endblock css %}
+    
+    

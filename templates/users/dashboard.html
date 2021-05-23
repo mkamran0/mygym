@@ -1,0 +1,27 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+
+
+{% block css %}
+    
+{% endblock css %}
+    
+
+
+
+
+{% block body %}
+    <h1>Welcome to dashboard</h1>
+    <p class="lead">{{user.username}}</p>
+{% endblock body %}
+
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link active" aria-current="page" id="wh">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link" id="wh">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link" id="wh">ContactUs</a></li>
+{% endblock content %}
+    
+    
+    

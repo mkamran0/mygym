@@ -1,0 +1,30 @@
+{% extends 'layout/base.html' %}
+
+{% block body %}
+<div class="card text-white bg-dark mb-3 my-4" style="max-width: 50rem;">
+    <div class="card-header">Query Details</div>
+    <div class="card-body">
+      <h5 class="card-title">Message</h5>
+      <p class="card-text"><p><img src="https://img.icons8.com/fluent/48/ffffff/instagram-new.png"/>  Instagram Account: <b>gyming@insta</b></p>
+      <p><img src="https://img.icons8.com/color/48/ffffff/twitter.png"/> Twitter Account: <b>gyming@twit</b></p>
+      <p><img src="https://img.icons8.com/fluent/48/ffffff/facebook-new.png"/> Facebook Account: <b>gyming@facing</b></p></p>
+    </div>
+  </div>
+  {% include 'layout/footer.html' %}
+  {% endblock body %}
+  
+  {% block css %}
+      <style>
+          footer{
+              margin-top: 410px;
+          }
+      </style>
+  {% endblock css %}
+  
+  {% block content %}
+  <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+  <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+  {% endblock content %}
+
+    

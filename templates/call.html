@@ -1,0 +1,29 @@
+{% extends 'layout/base.html' %}
+
+
+{% block body %}
+<div class="card text-white bg-dark mb-3 my-4" style="max-width: 50rem;">
+    <div class="card-header">Query Details</div>
+    <div class="card-body">
+      <h5 class="card-title">Contact Numbers</h5>
+      <p class="card-text"><p><img src="https://img.icons8.com/offices/30/000000/whatsapp.png"/> What's App No.  <b>9420245033,8535532055</b><p></p><img src="https://img.icons8.com/android/24/ffffff/phone-disconnected.png"/> Calling No. <b>8349355832,7943030543</b></p></p>
+    </div>
+  </div>
+  {% include 'layout/footer.html' %}
+  {% endblock body %}
+  
+  {% block css %}
+      <style>
+          footer{
+              margin-top: 515px;
+          }
+      </style>
+  {% endblock css %}
+  
+  {% block content %}
+  <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+  <li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+  <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+  {% endblock content %}
+
+    

@@ -1,0 +1,28 @@
+{% extends 'layout/base.html' %}
+
+{% block body %}
+    
+<div class="card text-dark bg-info mb-3 my-4" style="max-width: 50rem;">
+    <div class="card-header">Diet Plan Details</div>
+    <div class="card-body">
+      <h5 class="card-title">Diet Plans</h5>
+      <p class="card-text"><p>Paleo Diet</p><p>Vegan Diet</p><p>Low-Carb Diet</p><p>Dukan Diet</p><p>Atkins Diet</p><p>HCG Diet</p><p>Ultra-Low-Fat Diet</p><p>Zone Diet</p></p>
+    </div>
+  </div>
+  {% include 'layout/footer.html' %}
+  {% endblock body %}
+  
+  {% block css %}
+      <style>
+          footer{
+              margin-top: 282px;
+          }
+      </style>
+  {% endblock css %}
+
+  {% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+    

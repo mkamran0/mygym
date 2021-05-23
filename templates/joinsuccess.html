@@ -1,0 +1,30 @@
+{% extends 'layout/base.html' %}
+
+
+{% block body %}
+    
+<div class="card border-primary mb-3 my-4 mx-auto" style="max-width: 30rem;">
+    <div class="card-header mx-auto"><h1>Welcome To SK Gym</h1></div>
+    <div class="card-body text-primary mx-auto">
+      <h5 class="card-title ">Registration Success</h5>
+      <p class="card-text"></p>
+    </div>
+  </div>
+
+  {% include 'layout/footer.html' %}
+{% endblock body %}
+
+{% block content %}
+<li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+<li class="nav-item"><a href="{% url 'about' %}" class="nav-link active" aria-current="page">AboutUs</a></li>
+<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">ContactUs</a></li>
+{% endblock content %}
+
+{% block css %}
+    <style>
+        footer{
+            margin-top: 525px;
+        }
+    </style>
+{% endblock css %}
+    
